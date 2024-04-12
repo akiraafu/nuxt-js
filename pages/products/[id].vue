@@ -1,11 +1,6 @@
 <template>
   <div>
-    <h2>About</h2>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tempore
-      delectus vitae, nesciunt itaque harum aliquam minus incidunt similique
-      explicabo.
-    </p>
+    <p>Product details for {{ id }}</p>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tempore
       delectus vitae, nesciunt itaque harum aliquam minus incidunt similique
@@ -14,7 +9,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { id } = useRoute().params;
+</script>
 
 <style scoped>
 h2 {
