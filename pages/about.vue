@@ -11,7 +11,7 @@
       delectus vitae, nesciunt itaque harum aliquam minus incidunt similique
       explicabo.
     </p>
-    <div>{{ data.message }}</div>
+    <div>{{ data }}</div>
   </div>
 </template>
 
