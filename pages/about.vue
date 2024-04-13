@@ -11,10 +11,18 @@
       delectus vitae, nesciunt itaque harum aliquam minus incidunt similique
       explicabo.
     </p>
+    <div>{{ data.message }}</div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useFetch("/api/ninja?name=akira", {
+  method: "post",
+  body: {
+    age: 30,
+  },
+});
+</script>
 
 <style scoped>
 h2 {
